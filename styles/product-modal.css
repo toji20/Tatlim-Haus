@@ -1,0 +1,78 @@
+@media (max-width: 500px) {
+    .product-modal-cont {
+        padding: 50px;
+        padding-top: 10px;
+        max-width: 100%;
+        max-height: 100% !important;
+        flex-direction: column;
+        margin: auto;
+        display: flex;
+    }
+    .product-modal-cont-two {
+        padding: 10px 110px;
+        display: flex;
+        align-items: start;
+    }
+    .product-modal-img {
+        width: 280px;
+        height: 280px;
+        z-index: 5;
+        margin-top: -20px;
+        margin-bottom: 13px;
+    }
+    .product-modal-title {
+        font-size: 18px;
+    }
+    .product-modal-price {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .product-modal-ingredients {
+        font-size: 12px;
+    }
+    .dialog-modal {
+        height: 100% !important;
+    }
+    .dialog-close {
+        margin-right: 650px;
+        margin-top: 10px;
+        z-index: 50;
+    }
+    .dialog-close-svg {
+        width: 2rem;
+        height: 2rem;
+        opacity: none;
+        color: black;
+    }
+    .product-modal-desc {
+        display: none;
+    }
+    
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .product-modal-btn {
+        position: fixed;
+        bottom: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 50px);
+        max-width: 280px;
+    }
+    .product-modal-ingredients-desc {
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+    .product-modal-ingredients {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .product-desc {
+        display: none;
+    }
+    .product-mob {
+        display: block;
+    }
+}

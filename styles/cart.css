@@ -1,0 +1,14 @@
+@media (max-width: 500px) {
+    .cart-cont {
+        height: 100%;
+    }
+    .cart-footer {
+        padding-top: 0 !important;
+    }
+    .cart-list {
+        height: 600px !important;
+    }
+   .cart-empty-line {
+    box-shadow: 0 2px 4px rgb(0, 0, 0,0.2);
+   }
+}

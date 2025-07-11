@@ -1,0 +1,322 @@
+
+
+.product-button {
+    transition: all 0.3s;
+    color: white;
+    background-color: black;
+}
+
+.product-button:hover {
+    background-color: rgb(158, 45, 45);
+}
+
+.product-button:active {
+    background-color: rgb(58, 18, 18);
+}
+
+.product-button__cart {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+  }
+  
+.product-button__cart:hover {
+    background-color: rgb(158, 45, 45);
+    color: white;
+  }
+  .product-card-image {
+    overflow: hidden;
+    border-radius: 0 !important;
+  }
+.product-group__title {
+    font-weight: 900;
+    font-size: 55px;
+}
+
+.product-title {
+    font-weight: 600;
+}
+
+.product-desc {
+    font-weight: 400;
+}
+
+.product-price {
+    font-weight: 700;
+}
+
+.product-group__title {
+    font-weight: 700;
+}
+/* Основные стили */
+.product-card {
+    position: relative;
+    height: 557px;
+  }
+  
+  .product-card.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    background-color: rgba(229, 231, 235, 0.5);
+  }
+  
+  .product-image-container {
+    width: 280px;
+    height: 384px;
+    margin-bottom: 5px;
+  }
+  
+  .product-image {
+    width: 280px;
+    height: 384px;
+    object-fit: cover;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    margin-bottom: 7px;
+    width: 280px;
+    font-weight: 600;
+  }
+  
+  .product-desc {
+    font-size: 12px;
+    margin-bottom: 7px;
+    width: 230px;
+    font-weight: 400;
+  }
+  
+  .product-price {
+    font-weight: 700;
+  }
+  
+  .product-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-button {
+    transition: all 0.3s;
+    color: white;
+    background-color: #2B2823;
+    margin-right: 7px;
+    width: 124px;
+    height: 35px;
+    font-size: 12px;
+  }
+  
+  .product-button:hover {
+    background-color: rgb(158, 45, 45);
+  }
+  
+  .product-button:active {
+    background-color: rgb(58, 18, 18);
+  }
+  
+  .product-button__cart {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    width: 149px;
+    height: 35px;
+    font-size: 12px;
+  }
+  
+  .product-button__cart:hover {
+    background-color: rgb(158, 45, 45);
+    color: white;
+  }
+  .product-button__cart {
+    border: #CAC9C9 1px solid;
+    color: #666562;
+  }
+  
+  /* Мобильная версия (до 400px) */
+  @media (max-width: 500px) {
+    .product-image-container {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%; /* Создаем квадрат */
+        position: relative;
+        margin-bottom: 8px;
+      }
+    
+      .product-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+    .product-card {
+      height: auto;
+      width: 165px; /* Две колонны с небольшим отступом */
+      margin-bottom: 15px;
+    }
+    .product-title {
+      width: 100%;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+  
+    .product-desc {
+      font-size: 10px;
+      width: 100px;
+    }
+  
+    .product-price {
+      margin-bottom: 45px; /* Место для кнопок */
+      font-size: 13px;
+    }
+  
+    .product-button,
+    .product-button__cart {
+      width: 80px;
+      height: 35px;
+      font-size: 9px;
+    }
+    
+    .product-group__title {
+        font-size: 20px;
+    }
+    
+    .product-group__group-product {
+        gap: 25px;
+    }
+    .product-group__title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .product-group__group {
+        margin-bottom: 20px;
+        justify-content: space-between;
+
+    }
+    
+    .product-group__group-product {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        padding: 0 30px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .product-card {
+      height: auto;
+      width: 140px; /* Две колонны с небольшим отступом */
+      margin-bottom: 15px;
+    }
+  
+    .product-image-container {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%; /* Создаем квадрат */
+      position: relative;
+      margin-bottom: 8px;
+    }
+  
+    .product-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .product-title {
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  
+    .product-desc {
+      font-size: 9px;
+      width: 100px;
+    }
+  
+    .product-price {
+      margin-bottom: 45px; /* Место для кнопок */
+      font-size: 14px;
+    }
+  
+    .product-buttons {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .product-button,
+    .product-button__cart {
+      width: 48%;
+      height: 30px;
+      font-size: 8px;
+      margin-right: 0;
+    }
+    .product-group__title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .product-group__group {
+        margin-bottom: 20px;
+        justify-content: space-between;
+
+    }
+    
+    .product-group__group-product {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding: 0 30px;
+    }
+  }
+  @media (max-width: 375px) {
+    .product-card {
+      height: auto;
+      width: 120px; /* Две колонны с небольшим отступом */
+      margin-bottom: 15px;
+    }
+
+    .product-title {
+      width: 100%;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  
+    .product-desc {
+      font-size: 8px;
+      width: 100px;
+    }
+  
+    .product-price {
+      margin-bottom: 45px; /* Место для кнопок */
+      font-size: 12px;
+    }
+  
+    .product-button,
+    .product-button__cart {
+      width: 48%;
+      height: 28px;
+      font-size: 8px;
+    }
+    .product-group__title {
+        font-size: 20px;
+    }
+    
+    .product-group__group-product {
+        gap: 25px;
+    }
+  }

@@ -1,0 +1,102 @@
+/* Анимации для секций */
+.top-hero {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .bottom-hero {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .top-hero.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .bottom-hero.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  @media (max-width: 500px) {
+    .hero-con {
+      margin-bottom: 20px;
+    }
+    .bottom-hero-el {
+      display: none;
+    }
+    .top-hero-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    .top-hero-title-one {
+      width: 270px;
+    }
+    .top-hero-title-two {
+      margin-left: 200px;
+    }
+    .top-hero-line {
+      width: 123px;
+      margin-right: 25px;
+    }
+    .top-hero-desc {
+      font-size: 0.7rem;
+      margin-left: 0;
+      text-align: left;
+      max-width: 320px;
+      margin-bottom: 15px;
+    }
+
+    .top-hero-line-two {
+      width: 143px;
+      margin-left: auto;
+      display: block;
+    }
+    .interior-img-top {
+      display: block;
+      margin-bottom: 20px;
+      box-shadow: 10 15px 15px -5px rgb(0, 0, 0,0.3);
+    }
+  }
+  @media (max-width: 375px) {
+    .hero-con {
+      margin-bottom: 20px;
+    }
+    .bottom-hero-el {
+      display: none;
+    }
+    .top-hero-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .top-hero-title-one {
+      width: 250px;
+    }
+    .top-hero-title-two {
+      margin-left: 180px;
+    }
+    .top-hero-line {
+      width: 110px;
+      margin-right: 25px;
+    }
+    .top-hero-desc {
+      font-size: 0.6rem;
+      margin-left: 0;
+      text-align: left;
+      max-width: 320px;
+      margin-bottom: 15px;
+    }
+
+    .top-hero-line-two {
+      width: 143px;
+      margin-left: auto;
+      display: block;
+    }
+    .interior-img-top {
+      display: block;
+      margin-bottom: 20px;
+      box-shadow: 10 15px 15px -5px rgb(0, 0, 0,0.3);
+    }
+  }

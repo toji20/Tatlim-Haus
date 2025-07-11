@@ -1,0 +1,112 @@
+.filters-title {
+    font-weight: 500;
+}
+.filters-link {
+    transition: all 0.3s;
+}
+
+.filters-link:hover {
+    color: brown;
+}
+.filters-link {
+    position: relative;
+    display: block;
+  }
+  
+  .filters-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background-color: currentColor;
+    transition: width 0.5s ease;
+  }
+  
+  .filters-link:hover::after {
+    width: 100%;
+  }
+  /* Скрыть scrollbar для горизонтального скролла */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Общие стили для мобильной версии */
+
+  @media (max-width:500px) {
+    .filters-container-desktop {
+      display: none;
+    }
+    .filters-container-mobile {
+      display: flex;
+      max-width: 375px;
+      justify-content: center;
+      margin: auto;
+      background: none;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .page-product-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .filters-link {
+      background-color: rgb(241, 240, 240);
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: 300;
+    }
+    .filters-link-btn {
+      font-size: 13px;
+      text-align: center;
+    }
+    .filters-link::after {
+      content: none;
+    }
+    .page-product-container-alpha {
+      padding-top: 30px;
+    }
+  }
+  @media (max-width:375px) {
+    .filters-container-desktop {
+      display: none;
+    }
+    .filters-container-mobile {
+      display: flex;
+      max-width: 320px;
+      justify-content: center;
+      margin: auto;
+      background: none;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .page-product-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .filters-link {
+      background-color: rgb(241, 240, 240);
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: 300;
+    }
+    .filters-link-btn {
+      font-size: 11px;
+      text-align: center;
+    }
+    .filters-link::after {
+      content: none;
+    }
+    .page-product-container-alpha {
+      padding-top: 30px;
+    }
+  }
