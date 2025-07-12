@@ -120,6 +120,14 @@
   transform: scale(1.05);
   filter: brightness(1.8);
 }
+.menu__product:active {
+  transform: scale(1.05);
+  filter: brightness(1.8);
+}
+.menu__product:focus {
+  transform: scale(1.05);
+  filter: brightness(1.8);
+}
 
 .menu__product-title {
   width: 150px;

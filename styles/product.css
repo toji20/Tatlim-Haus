@@ -180,9 +180,14 @@
     .product-button__cart {
       width: 80px;
       height: 35px;
-      font-size: 9px;
+      font-size: 8px;
     }
-    
+    .product-button__cart {
+      width: 90px;
+    }
+    .product-button {
+      width: 70px;
+    }
     .product-group__title {
         font-size: 20px;
     }
@@ -258,10 +263,15 @@
   
     .product-button,
     .product-button__cart {
-      width: 48%;
       height: 30px;
-      font-size: 8px;
+      font-size: 7px;
       margin-right: 0;
+    }
+    .product-button__cart {
+      width: 57%;
+    }
+    .product-button {
+      width: 40%;
     }
     .product-group__title {
         font-size: 20px;
@@ -308,9 +318,14 @@
   
     .product-button,
     .product-button__cart {
-      width: 48%;
       height: 28px;
-      font-size: 8px;
+      font-size: 6px;
+    }
+    .product-button__cart {
+      width: 57%;
+    }
+    .product-button {
+      width: 40%;
     }
     .product-group__title {
         font-size: 20px;

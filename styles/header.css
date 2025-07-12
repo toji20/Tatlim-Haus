@@ -70,10 +70,10 @@
 }
 @media (max-width: 400px) {
     .header-container {
-        padding: 0 20px;
+        padding: 9px 20px;
     }
     .header-con-alpha {
-      max-width: 333px !important;  
+      max-width: 355px !important;  
     }
     .header-link {
         font-size: 12px;

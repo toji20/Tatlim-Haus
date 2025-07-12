@@ -8,6 +8,12 @@
 .filters-link:hover {
     color: brown;
 }
+.filters-link:focus {
+  color: brown;
+}
+.filters-link:active {
+  color: brown;
+}
 .filters-link {
     position: relative;
     display: block;
