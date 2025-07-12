@@ -264,7 +264,7 @@
     .product-button,
     .product-button__cart {
       height: 30px;
-      font-size: 7px;
+      font-size: 6px !important;
       margin-right: 0;
     }
     .product-button__cart {
