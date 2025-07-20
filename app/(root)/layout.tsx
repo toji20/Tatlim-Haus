@@ -30,7 +30,6 @@ export default function RootLayout({
         </Suspense>
         {children}
         {modal}
-        <Footer/>
         </main>
   );
 }

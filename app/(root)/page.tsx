@@ -1,5 +1,6 @@
 import { Container } from "@/components/shared/container";
 import { Filters } from "@/components/shared/filters";
+import { Footer } from "@/components/shared/footer";
 import { MainBg } from "@/components/shared/main-bg";
 import { MainHero } from "@/components/shared/main-hero";
 import { Map } from "@/components/shared/map";
@@ -43,6 +44,7 @@ export default async function Home() {
                      </div>
                     </Container>
                     <Map/>
+                    <Footer/>
                 </div>
             
   </>);
