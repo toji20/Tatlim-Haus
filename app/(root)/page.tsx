@@ -2,6 +2,7 @@ import { Container } from "@/components/shared/container";
 import { Filters } from "@/components/shared/filters";
 import { MainBg } from "@/components/shared/main-bg";
 import { MainHero } from "@/components/shared/main-hero";
+import { Map } from "@/components/shared/map";
 import { ProductGroupList } from "@/components/shared/product-group-list";
 import { prisma } from "@/prisma/prisma-client";
 import '@/styles/filter.css';
@@ -41,7 +42,7 @@ export default async function Home() {
                      </div>
                      </div>
                     </Container>
-                    <hr className='bg-[#5D2222] h-[20px] border-none'/>
+                    <Map/>
                 </div>
             
   </>);

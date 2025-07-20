@@ -3,6 +3,7 @@ import {Inter,Nunito} from "next/font/google";
 import "../globals.css";
 import { Header } from "@/components/shared/header";
 import { Suspense } from "react";
+import { Footer } from "@/components/shared/footer";
 
 const nunito = Nunito({
   subsets: ['cyrillic'],
@@ -25,10 +26,11 @@ export default function RootLayout({
   return (
         <main className="min-h-screen">
           <Suspense>
-        <Header />
+        <Header className="profile-header"/>
         </Suspense>
         {children}
         {modal}
+        <Footer/>
         </main>
   );
 }

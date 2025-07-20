@@ -26,8 +26,21 @@
     .header-link {
         font-size: 12px;
     }
-    .header-btns-nocart {
-        display: none !important;
+    .auth__btn-close {
+        display: block !important;
+    }
+    .auth-btn {
+        font-size: 0 !important;
+        gap: 0 !important;
+        background-color: #D80100 !important;
+        padding: 5px 15px !important;
+        border: none;
+    }
+    .auth__modal {
+        width: 100% !important;
+    }
+    .auth-btn-svg {
+        color: white !important;
     }
     .cart-desc {
         display: none !important;
@@ -54,7 +67,7 @@
       max-width: 333px !important;  
     }
     .header-link {
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .header-center {
@@ -70,15 +83,17 @@
 }
 @media (max-width: 400px) {
     .header-container {
-        padding: 9px 20px;
+        padding: 13px 20px;
     }
     .header-con-alpha {
       max-width: 355px !important;  
     }
     .header-link {
-        font-size: 12px;
+        font-size: 10px;
     }
-
+    .auth-btn {
+        padding: 0px 10px !important;
+    }
     .header-center {
         gap: 20px !important;
     }
@@ -98,14 +113,14 @@
       max-width: 300px !important;  
     }
     .header-link {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .header-center {
-        gap: 18px !important;
+        gap: 14px !important;
     }
     .header-con {
-        gap: 18px !important;
+        gap: 14px !important;
     }
     .header-logo {
         max-width: 50px;

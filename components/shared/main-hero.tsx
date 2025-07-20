@@ -5,6 +5,7 @@ import { Container } from './container';
 import { Menu } from './menu';
 import { Category } from '@prisma/client';
 import '@/styles/hero.css';
+import { Map } from './map';
 
 
 

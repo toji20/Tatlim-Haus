@@ -56,10 +56,11 @@
         position: fixed;
         bottom: 1px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) !important;
         width: calc(100% - 50px);
         max-width: 280px;
     }
+   
     .product-modal-ingredients-desc {
         font-size: 14px;
         letter-spacing: 1px;

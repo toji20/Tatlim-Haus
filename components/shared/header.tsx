@@ -22,9 +22,12 @@ export const Header = ({ className }: Props) => {
     
     // Проверяем, находимся ли мы на странице checkout
     const isCheckoutPage = pathname === '/checkout';
-    
+    const isProfilePage = pathname === '/profile';
+
     return (
-        <div className="alpha-header-container sticky top-5 z-50 w-full py-2 mt-[-120px]">
+        <>
+        {!isProfilePage && (
+            <div className="alpha-header-container sticky top-5 z-50 w-full py-2 mt-[-120px]">
             <div className="flex justify-center w-full">
                 <header className={cn(
                     className,
@@ -45,25 +48,33 @@ export const Header = ({ className }: Props) => {
                                 <a href="/" className="whitespace-nowrap header-link">
                                     главная
                                 </a>
-                                <a href="" className="whitespace-nowrap header-link">
+                                <a href="#Контакты" className="whitespace-nowrap header-link">
                                     контакты
                                 </a>
                             </div>
                             <div className="header-btns flex header-left items-center">
                                 {/* Условный рендеринг CartButton */}
-                                {!isCheckoutPage && (
+                                {!isCheckoutPage && !isProfilePage && (
                                     <CartButton className="header-button bg-[#D80100] w-[180px] h-[50px] py-[13px] px-[27px] text-base" />
                                 )}
 
-                                <div className="header-btns-nocart">
+                                
+                                {!isProfilePage && (
+                                    <div className="header-btns-nocart">
                                     <AuthModal open={openAuthModal} onClose={() => setOpenAuthModal(false)}/>
                                     <ProfileButton onClickSignIn={() => setOpenAuthModal(true)}/>
-                                </div>
+                                    </div>
+
+                                )}
+                                    
                             </div>
                         </div>
                     </Container>
                 </header>
             </div>
         </div>
+
+        )}
+        </>
     );
 };

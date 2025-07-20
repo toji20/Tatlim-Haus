@@ -13,13 +13,15 @@ import { FormRegisterSchema, TFormRegisterValues } from "./auth/forms/schemas";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { updateUserInfo } from "@/app/api/actions/user";
+import { cn } from "@/lib/utils";
 
 interface Props {
     data: User;
     hasAdminButton: any;
+    className: string;
   }
 
-export const ProfileForm: React.FC<Props> = ({data,hasAdminButton}) => {
+export const ProfileForm: React.FC<Props> = ({data,hasAdminButton,className}) => {
     const form = useForm({
         resolver: zodResolver(FormRegisterSchema),
         defaultValues: {
@@ -54,7 +56,7 @@ export const ProfileForm: React.FC<Props> = ({data,hasAdminButton}) => {
         });
       };
     return (
-        <Container className="flex">
+        <Container className={cn(className, "flex")}>
             <div className="flex-col">
             <Title text={`Личные данные`} size="md" className="font-bold" />
             <FormProvider {...form}>

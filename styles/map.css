@@ -1,0 +1,11 @@
+@media (max-width:500px) {
+    .map__info-block {
+        padding: 3rem;
+    }
+    .map__info-block-text {
+        font-size: 13px;
+    }
+    .map__info-block-title {
+        font-size: 20px;
+    }
+}

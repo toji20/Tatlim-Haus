@@ -9,6 +9,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import '@/styles/profile.css';
 
 interface OrderHistoryProps {
     orders: Order[];
@@ -54,17 +55,17 @@ export function OrderHistory({ orders }: OrderHistoryProps) {
     const displayedOrders = showAll ? sortedOrders : sortedOrders.slice(0, 4);
     
     return (
-        <div className="">
-            <h2 className="text-[30px] font-bold mb-[50px]">История заказов</h2>
+        <div className="order-history__conatiner min-h-[300px]">
+            <h2 className="order-history__title text-[30px] font-bold mb-[50px]">История заказов</h2>
             
-            <Accordion type="single" collapsible className="w-[500px] space-y-2">
+            <Accordion type="single" collapsible className="order-history__accordion w-[500px] space-y-2">
                 {displayedOrders.map((order, index) => (
-                    <AccordionItem key={order.id} value={order.id.toString()} className="border rounded-lg bg-white">
+                    <AccordionItem key={order.id} value={order.id.toString()} className="order-history__accordion-item border rounded-lg bg-white">
                         <AccordionTrigger className="px-4 py-3 hover:no-underline">
                             <div className="flex justify-between w-full pr-4 bg-white">
-                                <span className="font-medium">Заказ #{index + 1}</span>
+                                <span className="order-history__text font-medium">Заказ #{index + 1}</span>
                                 <div className="flex gap-4">
-                                    <span className="text-sm text-gray-500">
+                                    <span className="text-sm text-gray-500 order-history__text ">
                                         {new Date(order.createdAt).toLocaleDateString('ru-RU', {
                                             day: 'numeric',
                                             month: 'short',
@@ -76,7 +77,7 @@ export function OrderHistory({ orders }: OrderHistoryProps) {
                                     <span className={`text-sm ${
                                         order.status === 'SUCCEEDED' ? 'text-green-600' : 
                                         order.status === 'CANCELLED' ? 'text-red-600' : 
-                                        'text-orange-600'
+                                        'text-orange-600 order-history__text '
                                     }`}>
                                         {getStatusText(order.status)}
                                     </span>
@@ -88,25 +89,25 @@ export function OrderHistory({ orders }: OrderHistoryProps) {
                             <div className="space-y-3">
                                 <div className="grid grid-cols-2 gap-2">
                                     <div>
-                                    <p className="font-semibold">Сумма:</p>
+                                    <p className="order-history__text font-semibold">Сумма:</p>
                                         <p>{order.totalAmount} ₽</p>
                                     </div>
                                     <div>
-                                        <p className="font-semibold">Адрес:</p>
-                                        <p>{order.address}</p>
+                                        <p className="order-history__text font-semibold">Адрес:</p>
+                                        <p className='order-history__text'>{order.address}</p>
                                     </div>
                                     {order.comment && (
                                         <div className="col-span-2">
-                                            <p className="font-semibold">Комментарий:</p>
-                                            <p>{order.comment}</p>
+                                            <p className="order-history__text font-semibold">Комментарий:</p>
+                                            <p className='order-history__text'>{order.comment}</p>
                                         </div>
                                     )}
                                 </div>
                                 
                                 {order.items && (
                                     <div>
-                                        <h3 className="font-semibold mb-2">Состав заказа:</h3>
-                                        <ul className="space-y-2">
+                                        <h3 className="order-history__text font-semibold mb-2">Состав заказа:</h3>
+                                        <ul className="space-y-2 order-history__text ">
                                             {renderOrderItems(String(order.items))}
                                         </ul>
                                     </div>
