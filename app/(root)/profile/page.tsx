@@ -66,6 +66,11 @@ export default async function ProfilePage() {
                             <h2 className="profile__user-name">{user.fullName || 'Пользователь'}</h2>
                             <p className="profile__user-phone">{'Телефон не указан'}</p>
                             <p className="profile__user-email">{user.email}</p>
+                            {hasAdminButton && (
+                            <Link href="/admin-tatlim-xaus">
+                            <Button>Администратор</Button>
+                            </Link>
+                            )}
                         </div>
                     </div>
                     <div className="profile__back flex items-center">
@@ -84,11 +89,6 @@ export default async function ProfilePage() {
                     <ProfileForm data={user} hasAdminButton={hasAdminButton} className='profile-form'/>
                 </div>
                 <OrderHistory orders={orders}/>
-                {hasAdminButton && (
-                            <Link href="/admin-tatlim-xaus">
-                            <Button>Администратор</Button>
-                            </Link>
-                            )}
             </Container>
         </div>
     )
