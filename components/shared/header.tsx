@@ -34,22 +34,22 @@ export const Header = ({ className }: Props) => {
                     'header-con-alpha flex border max-w-5xl w-full rounded-[14px] bg-white shadow-sm'
                 )}>
                     <Container className="header-container flex items-center py-2">
-                        <div className="header-con flex items-center gap-20">
+                        <div className="header-con flex items-center gap-[40px]">
                             <div className="flex header-right items-center">
                                 <img src="logo.png" alt="Татлым хаус" className="header-logo"/>
                             </div>
-                            <div className="flex header-center items-center gap-14 text-xl">
+                            <div className="flex header-center items-center gap-14 text-[17px]">
                                 <a href="#О нас" className="whitespace-nowrap header-link">
-                                    о нас
+                                    О НАС
                                 </a>
                                 <a href="#Меню" className="whitespace-nowrap header-link">
-                                    меню
+                                    МЕНЮ
                                 </a>
                                 <a href="/" className="whitespace-nowrap header-link">
-                                    главная
+                                    ГЛАВНАЯ
                                 </a>
                                 <a href="#Контакты" className="whitespace-nowrap header-link">
-                                    контакты
+                                    КОНТАКТЫ
                                 </a>
                             </div>
                             <div className="header-btns flex header-left items-center">

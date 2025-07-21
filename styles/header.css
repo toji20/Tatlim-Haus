@@ -1,7 +1,10 @@
 .header-link {
     transition: all 0.3s;
 }
-
+.header-link {
+    letter-spacing: -0.5px;
+    font-weight: 800;
+}
 
 .header-link:hover {
     color: brown;
@@ -24,7 +27,7 @@
       max-width: 375px !important;  
     }
     .header-link {
-        font-size: 12px;
+        font-size: 10px;
     }
     .auth__btn-close {
         display: block !important;
@@ -46,7 +49,7 @@
         display: none !important;
     }
     .header-center {
-        gap: 18px !important;
+        gap: 17px !important;
     }
     .header-con {
         justify-content: space-between;
@@ -67,7 +70,7 @@
       max-width: 333px !important;  
     }
     .header-link {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .header-center {
@@ -89,7 +92,7 @@
       max-width: 355px !important;  
     }
     .header-link {
-        font-size: 10px;
+        font-size: 8px;
     }
     .auth-btn {
         padding: 0px 10px !important;
@@ -113,7 +116,7 @@
       max-width: 300px !important;  
     }
     .header-link {
-        font-size: 9px;
+        font-size: 7px;
     }
 
     .header-center {

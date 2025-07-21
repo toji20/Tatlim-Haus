@@ -160,7 +160,7 @@ export const products = [
       name: "Адана-кебаб",
       price: 1020,
       categoryId: 2,
-      imageUrl: "https://nmtomxkciwtvymcezhtm.supabase.co/storage/v1/object/public/imgtx//c-2-product-10.png"},
+      imageUrl: "https://nmtomxkciwtvymcezhtm.supabase.co/storage/v1/object/public/imgtx//c-2-product-11.png"},
       {
         name: "Дюрюм Адана-кебаб",
         price: 1150,

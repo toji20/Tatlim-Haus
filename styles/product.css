@@ -319,7 +319,7 @@
     .product-button,
     .product-button__cart {
       height: 28px;
-      font-size: 6px;
+      font-size: 5.5px !important;
     }
     .product-button__cart {
       width: 57%;

@@ -16,7 +16,7 @@ export const MainBg: React.FC<React.PropsWithChildren<Props>> = ({}) => {
           РЕСТОРАН ТУРЕЦКОЙ КУХНИ
         </h1>
         <Button className="main-button">
-          ЗАБРОНИРОВАТЬ СТОЛ
+          <a href="#Контакты">ЗАБРОНИРОВАТЬ СТОЛ</a>
         </Button>
       </div>
     </main>
