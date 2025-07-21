@@ -48,11 +48,11 @@ export const MainHero: React.FC<React.PropsWithChildren<Props>> = ({ categories 
           <div ref={topHeroRef} className='top-hero'>
           <h2 className='top-hero-title top-hero-title-one whitespace-nowrap flex items-center text-[48px] w-[390px]'><hr className='top-hero-line mr-2 bg-[#D80100] w-[290px] h-[3px]'/><span>О нашем</span></h2>
                   <h2 className='top-hero-title top-hero-title-two ml-[230px] text-[48px] mb-[17px]'>Ресторане</h2>
-                  <img src="interior.png" alt="#" className='interior-img-top hidden mr-[17px]'/>
+                  <img src="interior-2.png" alt="#" className='interior-img-top hidden mr-[17px]'/>
                   <p className='top-hero-desc text-[17px] max-w-[819px] ml-[130px]'>МЫ РЕСТОРАН ПРЕКРАСНОЙ ТУРЕЦКОЙ КУХНИ
                   У НАС СОБРАНЫ ВСЕ ТРАДИЦИОННЫЕ БЛЮДА ТУРЕЦКОЙ КУХНИ
                   И НАШЕЙ ЦЕЛЬЮ ЯВЛЯЕТСЯ ЧТОБЫ КАЖДЫЙ ГОСТЬ ОКУНУЛСЯ В АТМОСФЕРУ
-                  ТУРЦИИ. НАШ РЕСТОРАН - ЭТО МЕСТО В КОТОРОМ ВЫ МОЖЕТЕ СЕБЯ ПОЧУВСТВОВАТЬ
+                  ТУРЦИИ. НАШ РЕСТОРАН - ЭТО МЕСТО В КОТОРОМ ВЫ МОЖЕТЕ ПОЧУВСТВОВАТЬ
                   СЕБЯ В ТУРЦИИ
                   </p>
                   <hr className='top-hero-line-two hidden ml-3 bg-[#D80100] w-[100%] h-[3px] mb-4'/>

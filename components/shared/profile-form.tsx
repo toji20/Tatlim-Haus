@@ -77,7 +77,7 @@ export const ProfileForm: React.FC<Props> = ({data,hasAdminButton,className}) =>
                 disabled={form.formState.isSubmitting}
                 className="text-base bg-white"
                 type="button">
-                Выйти
+                Выйти из аккаунта
                 </Button>
                 {hasAdminButton && (
               <Link href="/admin-tatlim-xaus">
